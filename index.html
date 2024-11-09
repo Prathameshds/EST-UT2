@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Studies Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin: 15px 0;
+        }
+        .options {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Environmental Studies Quiz</h1>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Which one of the following is not a type of biodiversity?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="A"> A) Genetic</li>
+                    <li><input type="radio" name="q1" value="B"> B) Species</li>
+                    <li><input type="radio" name="q1" value="C"> C) Biology</li>
+                    <li><input type="radio" name="q1" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>2. Which of the following forms a level of biodiversity?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="A"> A) Alpha biodiversity</li>
+                    <li><input type="radio" name="q2" value="B"> B) Delta biodiversity</li>
+                    <li><input type="radio" name="q2" value="C"> C) Species biodiversity</li>
+                    <li><input type="radio" name="q2" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>3. Irish Potato Famine is an agricultural disaster. In which year did it occur?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="A"> A) 1970</li>
+                    <li><input type="radio" name="q3" value="B"> B) 1971</li>
+                    <li><input type="radio" name="q3" value="C"> C) 1972</li>
+                    <li><input type="radio" name="q3" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>4. Which of the following has the largest desert?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="A"> A) Kutchchh</li>
+                    <li><input type="radio" name="q4" value="B"> B) West Coast</li>
+                    <li><input type="radio" name="q4" value="C"> C) Nicobars</li>
+                    <li><input type="radio" name="q4" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>5. Which of the following are islands?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="A"> A) Andaman and Nicobars</li>
+                    <li><input type="radio" name="q5" value="B"> B) Lakshadweep</li>
+                    <li><input type="radio" name="q5" value="C"> C) Malabar Plains</li>
+                    <li><input type="radio" name="q5" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>6. Himalayan Mountains fall in which region?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q6" value="A"> A) 2A, 2B, 2C, 2D</li>
+                    <li><input type="radio" name="q6" value="B"> B) 8A</li>
+                    <li><input type="radio" name="q6" value="C"> C) 6B</li>
+                    <li><input type="radio" name="q6" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>7. Aravali Mountain ranges are found in which states?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="A"> A) Gujarat, MP, Rajasthan</li>
+                    <li><input type="radio" name="q7" value="B"> B) Ladakh Mountain</li>
+                    <li><input type="radio" name="q7" value="C"> C) Coastal Region</li>
+                    <li><input type="radio" name="q7" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>8. North-East India comprises which region?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q8" value="A"> A) Himalayan hill region</li>
+                    <li><input type="radio" name="q8" value="B"> B) Aravali hill ranges</li>
+                    <li><input type="radio" name="q8" value="C"> C) Non-Himalayan hill ranges</li>
+                    <li><input type="radio" name="q8" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>9. Which of the following animals comes under the category of “Threatened Species”?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q9" value="A"> A) Leopard</li>
+                    <li><input type="radio" name="q9" value="B"> B) Mouse</li>
+                    <li><input type="radio" name="q9" value="C"> C) Dog</li>
+                    <li><input type="radio" name="q9" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>10. Which of the following is an Indian biodiversity hotspot?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q10" value="A"> A) The Western Ghats</li>
+                    <li><input type="radio" name="q10" value="B"> B) National Parks</li>
+                    <li><input type="radio" name="q10" value="C"> C) Botanical Gardens</li>
+                    <li><input type="radio" name="q10" value="D"> D) None of the above</li>
+                </ul>
+            </div>
+
+            <!-- Add questions 11 to 30 following the same format -->
+            <div class="question">
+                <p>11. The suspended particulate matter is released into air by:</p>
+                <ul class="options">
+                    <li><input type="radio" name="q11" value="A"> A) Stone Crushing</li>
+                    <li><input type="radio" name="q11" value="B"> B) Thermal Power Plant</li>
+                    <li><input type="radio" name="q11" value="C"> C) Automobile Exhausts</li>
+                    <li><input type="radio" name="q11" value="D"> D) All of the Above</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p>12. Mercury, Lead, Tin are examples of:</p>
+                <ul class="options">
+                    <li><input type="radio" name="q12" value="A"> A) Natural Pollutants</li>
+                    <li><input type="radio" name="q12" value="B"> B) Artificial Pollutants</li>
+                    <li><input type="radio" name="q12" value="C"> C) Persistent Pollutants</li>
+                    <li><input type="radio" name="q12" value="D"> D) Non-degradable Pollutants</li>
+                </ul>
+            </div>
+
+            <div class="question">
+    <p>13. Biological particulate mainly consists of:</p>
+    <ul class="options">
+        <li><input type="radio" name="q13" value="A"> A) Bacterial cells, fungal spores</li>
+        <li><input type="radio" name="q13" value="B"> B) Zinc, Titanium, Mercury</li>
+        <li><input type="radio" name="q13" value="C"> C) Organic and inorganic material</li>
+        <li><input type="radio" name="q13" value="D"> D) None of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>14. Which of these is a radioactive waste?</p>
+    <ul class="options">
+        <li><input type="radio" name="q14" value="A"> A) Gold</li>
+        <li><input type="radio" name="q14" value="B"> B) Silver</li>
+        <li><input type="radio" name="q14" value="C"> C) Mercury</li>
+        <li><input type="radio" name="q14" value="D"> D) Uranium</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>15. Smog causes:</p>
+    <ul class="options">
+        <li><input type="radio" name="q15" value="A"> A) Water Pollution</li>
+        <li><input type="radio" name="q15" value="B"> B) Air Pollution</li>
+        <li><input type="radio" name="q15" value="C"> C) Soil Pollution</li>
+        <li><input type="radio" name="q15" value="D"> D) None of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>16. Soot, Smoke, Tar, Dust get released from:</p>
+    <ul class="options">
+        <li><input type="radio" name="q16" value="A"> A) Automobile</li>
+        <li><input type="radio" name="q16" value="B"> B) Agriculture</li>
+        <li><input type="radio" name="q16" value="C"> C) Industries</li>
+        <li><input type="radio" name="q16" value="D"> D) Automobile Reactors</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>17. The rise in ozone causes:</p>
+    <ul class="options">
+        <li><input type="radio" name="q17" value="A"> A) Necrosis</li>
+        <li><input type="radio" name="q17" value="B"> B) Abscission</li>
+        <li><input type="radio" name="q17" value="C"> C) Destroying chlorophyll</li>
+        <li><input type="radio" name="q17" value="D"> D) Disturbing photosynthesis</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>18. Radioactive dust causes:</p>
+    <ul class="options">
+        <li><input type="radio" name="q18" value="A"> A) Physical disorder</li>
+        <li><input type="radio" name="q18" value="B"> B) Mental disorder</li>
+        <li><input type="radio" name="q18" value="C"> C) Genetic defect</li>
+        <li><input type="radio" name="q18" value="D"> D) All the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>19. Global warming causes flooding:</p>
+    <ul class="options">
+        <li><input type="radio" name="q19" value="A"> A) False</li>
+        <li><input type="radio" name="q19" value="B"> B) True</li>
+        <li><input type="radio" name="q19" value="C"> C) None</li>
+        <li><input type="radio" name="q19" value="D"> D) All of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>20. The percentage of pollutants from fuel combustion is:</p>
+    <ul class="options">
+        <li><input type="radio" name="q20" value="A"> A) 30%</li>
+        <li><input type="radio" name="q20" value="B"> B) 90%</li>
+        <li><input type="radio" name="q20" value="C"> C) 50%</li>
+        <li><input type="radio" name="q20" value="D"> D) 27%</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>21. Which of the following is a primary cause of deforestation?</p>
+    <ul class="options">
+        <li><input type="radio" name="q21" value="A"> A) Overgrazing</li>
+        <li><input type="radio" name="q21" value="B"> B) Urbanization</li>
+        <li><input type="radio" name="q21" value="C"> C) Logging for timber</li>
+        <li><input type="radio" name="q21" value="D"> D) All of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>22. The term "biodiversity" refers to the variety of life at which levels?</p>
+    <ul class="options">
+        <li><input type="radio" name="q22" value="A"> A) Genetic level</li>
+        <li><input type="radio" name="q22" value="B"> B) Species level</li>
+        <li><input type="radio" name="q22" value="C"> C) Ecosystem level</li>
+        <li><input type="radio" name="q22" value="D"> D) All of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>23. The loss of biodiversity directly affects which of the following?</p>
+    <ul class="options">
+        <li><input type="radio" name="q23" value="A"> A) Climate change</li>
+        <li><input type="radio" name="q23" value="B"> B) Ecosystem services</li>
+        <li><input type="radio" name="q23" value="C"> C) Food security</li>
+        <li><input type="radio" name="q23" value="D"> D) All of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>24. The first national park in India was:</p>
+    <ul class="options">
+        <li><input type="radio" name="q24" value="A"> A) Jim Corbett National Park</li>
+        <li><input type="radio" name="q24" value="B"> B) Kaziranga National Park</li>
+        <li><input type="radio" name="q24" value="C"> C) Sunderbans National Park</li>
+        <li><input type="radio" name="q24" value="D"> D) Silent Valley National Park</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>25. Which of the following is a non-renewable resource?</p>
+    <ul class="options">
+        <li><input type="radio" name="q25" value="A"> A) Solar energy</li>
+        <li><input type="radio" name="q25" value="B"> B) Wind energy</li>
+        <li><input type="radio" name="q25" value="C"> C) Coal</li>
+        <li><input type="radio" name="q25" value="D"> D) Biomass</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>26. What is the main purpose of the Ramsar Convention?</p>
+    <ul class="options">
+        <li><input type="radio" name="q26" value="A"> A) To protect marine ecosystems</li>
+        <li><input type="radio" name="q26" value="B"> B) To conserve wetlands</li>
+        <li><input type="radio" name="q26" value="C"> C) To regulate fishing activities</li>
+        <li><input type="radio" name="q26" value="D"> D) To preserve endangered species</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>27. Which of the following is a consequence of habitat fragmentation?</p>
+    <ul class="options">
+        <li><input type="radio" name="q27" value="A"> A) Increased genetic diversity</li>
+        <li><input type="radio" name="q27" value="B"> B) Creation of isolated populations</li>
+        <li><input type="radio" name="q27" value="C"> C) Improved species migration</li>
+        <li><input type="radio" name="q27" value="D"> D) None of the above</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>28. The term "carbon footprint" refers to:</p>
+    <ul class="options">
+        <li><input type="radio" name="q28" value="A"> A) The amount of carbon dioxide emitted during respiration</li>
+        <li><input type="radio" name="q28" value="B"> B) The total amount of greenhouse gases emitted into the atmosphere as a result of human activities</li>
+        <li><input type="radio" name="q28" value="C"> C) The process of photosynthesis in plants</li>
+        <li><input type="radio" name="q28" value="D"> D) The depletion of the ozone layer</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>29. The "Greenhouse Effect" is caused by the accumulation of which gases in the atmosphere?</p>
+    <ul class="options">
+        <li><input type="radio" name="q29" value="A"> A) Oxygen and Nitrogen</li>
+        <li><input type="radio" name="q29" value="B"> B) Carbon dioxide, methane, and water vapor</li>
+        <li><input type="radio" name="q29" value="C"> C) Nitrous oxide and ozone</li>
+        <li><input type="radio" name="q29" value="D"> D) Argon and neon</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>30. Which of the following is an example of a renewable resource?</p>
+    <ul class="options">
+        <li><input type="radio" name="q30" value="A"> A) Natural gas</li>
+        <li><input type="radio" name="q30" value="B"> B) Oil</li>
+        <li><input type="radio" name="q30" value="C"> C) Solar energy</li>
+        <li><input type="radio" name="q30" value="D"> D) Coal</li>
+    </ul>
+</div>
+
+
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+    q1: "C", q2: "A", q3: "C", q4: "A", q5: "A",
+    q6: "A", q7: "A", q8: "A", q9: "A", q10: "A",
+    q11: "D", q12: "D", 
+    q13: "A", q14: "D", q15: "B", q16: "C", q17: "D",
+    q18: "D", q19: "B", q20: "D", q21: "D", q22: "D",
+    q23: "D", q24: "A", q25: "C", q26: "B", q27: "B",
+    q28: "B", q29: "B", q30: "C"
+};
+
+
+        function checkAnswers() {
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            for (let question in correctAnswers) {
+                const answer = form[question] && form[question].value;
+                if (answer === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `You scored ${score} out of 30`;
+        }
+    </script>
+
+</body>
+</html>
